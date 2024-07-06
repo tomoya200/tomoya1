@@ -1,0 +1,66 @@
+// Place all the styles related to the perfumes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.starts{
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    margin: -25px 0 0 -25px; /* 完全に中央に配置するため、上・左の margin を負の数に設定 */
+    font-family: 'Alice', serif;
+}
+.start{
+    background-image: url("白1");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Alice', serif;
+}
+
+.container-sindan{
+    margin-top: 180px;
+}
+.row{
+    justify-content: center;
+    display: flex;
+    font-family: 'Alice', serif;
+}
+.col-12{
+    justify-content: center;
+    display: flex;
+    gap:30px;
+    line-height:80px;
+    font-family: 'Alice', serif;
+}
+
+.sindanbotan{
+    text-align: center;
+    font-family: 'Alice', serif;
+}
+.intoro{
+    text-align: center;
+    position: absolute;
+    top: 36%;
+    left: 39%;
+    margin: -25px 0 0 -25px; /* 完全に中央に配置するため、上・左の margin を負の数に設定 */
+    font-family: 'Alice', serif;
+}
+
+.nagi{
+    height: 200px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 39%;
+    margin: -25px 0 0 -25px; /* 完全に中央に配置するため、上・左の margin を負の数に設定 */
+    font-family: 'Alice', serif;
+}
+

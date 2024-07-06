@@ -1,0 +1,35 @@
+<%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <p>Question1. 仕上がりのイメージは？…</p>
+        </div>
+
+        <div class="col-12">
+                
+            <div class="col-1">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>フォーマル・ツヤのある感じ</p>
+            </div>
+            <div class="col-2">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>カジュアル・マットな感じ</p>
+            </div>
+
+        </div>    
+
+        <div class="row">
+            <p>Question2. 髪型はどんな感じがいいか…</p>
+        </div>
+            
+        <div class="col-12">
+            
+            <div class="col-1">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>パーマ・無造作スタイル</p>
+            </div>
+            <div class="col-2">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>かっちり固めるスタイル</p>
+            </div>
+
+    </div>
+    <div class="sindanbotan">
+        <%= f.submit "診断する" %>
+    </div>
+<% end %>

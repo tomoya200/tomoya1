@@ -1,0 +1,53 @@
+<div class="intoro">
+    <h2>診断結果</h2>
+    <p>あなたにおすすめのワックスのタイプは…</p>
+</div>
+<div class="tweet-container">
+    <div class="tweet">
+        <% if @perfume.question == "11" %>
+        <div class="nagi">
+            <%= image_tag ("ファイバータイプ3"), size: '300x200' %>
+            <h3>ファイバータイプ</h3>
+            <p>扱いやすさが抜群で人気</p>
+            <p>毛先に動きのあるスタイルを作れる</p>
+            <p>普通～硬い毛の人に向いている</p>
+            <br>
+            <%= link_to "戻る", new_perfume_path, class: "link" %>
+        </div>
+
+        <% elsif @perfume.question == "12" %>
+        <div class="nagi">
+            <%= image_tag ("ジェルタイプ3"), size: '300x200' %>
+            <h3>ジェルタイプ</h3>
+            <p>ホールド力に優れている</p>
+            <p>ツヤ感を与えてくれる</p>
+            <p>手直しが必要な場合は不向き</p>
+            <br>
+            <%= link_to "戻る", new_perfume_path, class: "link" %>
+        </div>
+
+        <% elsif @perfume.question == "21" %>
+        <div class="nagi">
+            <%= image_tag ("クリームタイプ3"), size: '300x200' %>
+            <h3>クリームタイプ</h3>
+            <p>セットのしやすさが特色で</p>
+            <p>短髪からロングまで</p>
+            <p>どのようなヘアスタイルにも有効</p>
+            <p>ナチュラルに見える</p>
+            <br>
+            <%= link_to "戻る", new_perfume_path, class: "link" %>
+        </div>
+
+        <% elsif @perfume.question == "22" %>
+        <div class="nagi">
+            <%= image_tag ("クレイタイプ3"), size: '300x200' %>
+            <h3>クレイタイプ</h3>
+            <p>ツヤが少なく軽い自然な雰囲気がでる</p>
+            <p>しっかり髪を固めたいときに有効</p>
+            <p>柔らかい髪や短髪の人におすすめ！</p>
+            <br>
+            <%= link_to "戻る", new_perfume_path, class: "link" %>
+        </div>
+
+        <% end %>
+</div>
